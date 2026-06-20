@@ -1,38 +1,198 @@
-﻿<!DOCTYPE html>
-<html>
+﻿```html
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-    <title>Hưng Nova - Game Developer</title>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hưng Nova - Game Developer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+header h1{
+    font-size:60px;
+}
+
+header p{
+    color:#94a3b8;
+    margin-top:15px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+}
+</style>
 </head>
+
 <body>
+
+<header>
     <h1>Hưng Nova</h1>
     <p>Unity Game Developer</p>
 
+    <a href="#projects" class="btn">
+        Xem dự án
+    </a>
+</header>
+
+<section>
     <h2>Giới thiệu</h2>
-    <p>Tôi là lập trình viên Unity chuyên phát triển game 2D và 3D.</p>
 
-    <h2>Dự án</h2>
+    <p style="text-align:center;max-width:800px;margin:auto;line-height:1.8;">
+        Tôi là Unity Game Developer chuyên phát triển game 2D và 3D.
+        Có kinh nghiệm xây dựng gameplay, UI, hệ thống RPG,
+        AI, inventory, quest và tối ưu hiệu năng.
+    </p>
+</section>
 
-    <div>
-        <h3>Hansel and Gretel: The Witch's Game</h3>
-        <p>Game RPG phiêu lưu do tôi phát triển bằng Unity.</p>
+<section>
+    <h2>Kỹ năng</h2>
+
+    <div class="skills">
+        <div class="skill">Unity</div>
+        <div class="skill">C#</div>
+        <div class="skill">Git</div>
+        <div class="skill">Game Design</div>
+        <div class="skill">UI/UX</div>
+        <div class="skill">Mobile Game</div>
     </div>
+</section>
 
-    <div>
-        <h3>Robot Adventure</h3>
-        <p>Game nâng cấp robot và khám phá thế giới.</p>
+<section id="projects">
+    <h2>Dự án nổi bật</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?1">
+            <div class="card-content">
+                <h3>Hansel and Gretel: The Witch's Game</h3>
+                <p>RPG phiêu lưu với phép thuật, quái vật và hệ thống đồng đội.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?2">
+            <div class="card-content">
+                <h3>Vietnam RPG</h3>
+                <p>Game RPG lấy cảm hứng từ văn hóa và bối cảnh Việt Nam.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?3">
+            <div class="card-content">
+                <h3>Survivor Horde</h3>
+                <p>Game sinh tồn chiến đấu với hàng nghìn quái vật.</p>
+            </div>
+        </div>
+
     </div>
+</section>
 
-    <div>
-        <h3>Survivor Horde</h3>
-        <p>Game sinh tồn tiêu diệt đàn quái vật.</p>
-    </div>
-
+<section>
     <h2>Liên hệ</h2>
-    <ul>
-        <li>GitHub</li>
-        <li>YouTube: Vui game vãi</li>
-        <li>Email của bạn</li>
-    </ul>
+
+    <p style="text-align:center;">
+        YouTube: Vui game vãi
+        <br><br>
+        GitHub: Your Github
+    </p>
+</section>
+
+<footer>
+    © 2026 Hưng Nova
+</footer>
+
 </body>
 </html>
+```
