@@ -1,94 +1,251 @@
-﻿---
+---
 ---
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My game my rule</title>
 <link rel="stylesheet" href="assets/css/style.css">
-<title>Hưng Nova - Game Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+{% include header.html %}
+<style>
+
+</style>
 </head>
 
 <body>
-    {{ site.title }}
-{% include header.html %}
-<header>
-    <h1>Hưng Nova</h1>
-    <p>Unity Game Developer</p>
-
-    <a href="#projects" class="btn">
-        Xem dự án
-    </a>
-</header>
-
-<section>
-    <h2>Giới thiệu</h2>
-
-    <p style="text-align:center;max-width:800px;margin:auto;line-height:1.8;">
-        Tôi là Unity Game Developer chuyên phát triển game 2D và 3D.
-        Có kinh nghiệm xây dựng gameplay, UI, hệ thống RPG,
-        AI, inventory, quest và tối ưu hiệu năng.
-    </p>
-</section>
-
-<section>
-    <h2>Kỹ năng</h2>
-
-    <div class="skills">
-        <div class="skill">Unity</div>
-        <div class="skill">C#</div>
-        <div class="skill">Git</div>
-        <div class="skill">Game Design</div>
-        <div class="skill">UI/UX</div>
-        <div class="skill">Mobile Game</div>
+ 
+<div class="hero">
+  <div class="avatar">
+    <svg width="90" height="90" viewBox="0 0 90 90">
+      <circle cx="45" cy="58" r="22" fill="#F0C29A"/>
+      <path d="M23 56 Q45 70 67 56 L67 78 Q45 88 23 78 Z" fill="#2C7A6F"/>
+      <path d="M40 70 L45 80 L50 70 Z" fill="#fff"/>
+      <path d="M42 70 L45 90 L48 70 Z" fill="#1ABC9C"/>
+      <path d="M30 44 Q30 22 45 22 Q60 22 60 44 Q60 50 45 50 Q30 50 30 44 Z" fill="#3a2a1a"/>
+      <path d="M22 42 Q22 14 45 14 Q68 14 68 42 L60 42 Q60 24 45 24 Q30 24 30 42 Z" fill="#F2C038"/>
+      <rect x="20" y="38" width="50" height="8" rx="3" fill="#F2C038"/>
+      <path d="M33 60 Q45 66 57 60" stroke="#3a2a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <h1>UNITY DEVELOPER</h1>
+  <div class="divider"><span class="line"></span><span class="star">★</span><span class="line"></span></div>
+  <p class="subtitle">Unity - C# - UI/UX - photoshop/wacom - Streamer</p>
+</div>
+ 
+<div class="section portfolio-section" id="portfolio">
+  <div class="container">
+    <h2 class="section-title">Dự án Game nổi bật</h2>
+    <div class="divider"><span class="line"></span><span class="star">★</span><span class="line"></span></div>
+ 
+    <div class="portfolio-grid">
+ 
+      <div class="pf-card pf-1" data-modal="m1">
+        <div class="pf-thumb">
+          <svg viewBox="0 0 100 100">
+            <rect x="20" y="50" width="60" height="35" fill="#8B5A2B"/>
+            <polygon points="50,25 85,50 15,50" fill="#5C3A1E"/>
+            <rect x="40" y="62" width="14" height="23" fill="#5C3A1E"/>
+            <rect x="60" y="58" width="10" height="10" fill="#D9B68C"/>
+            <rect x="68" y="30" width="6" height="14" fill="#5C3A1E"/>
+            <circle cx="74" cy="22" r="4" fill="#EEE"/>
+            <circle cx="78" cy="16" r="5" fill="#EEE"/>
+          </svg>
+        </div>
+        <div class="pf-body">
+          <h3>Cabin</h3>
+          <p>A quiet brand site for a remote outdoor retreat, built for slow browsing.</p>
+        </div>
+      </div>
+ 
+      <div class="pf-card pf-2" data-modal="m2">
+        <div class="pf-thumb">
+          <svg viewBox="0 0 100 100">
+            <path d="M20 70 L50 25 L80 70 Z" fill="#7A4A2A"/>
+            <path d="M20 70 L80 70 L80 80 L20 80 Z" fill="#FBEAD2"/>
+            <path d="M30 70 L50 38 L70 70 Z" fill="#A5673A"/>
+            <circle cx="50" cy="30" r="6" fill="#C0392B"/>
+          </svg>
+        </div>
+        <div class="pf-body">
+          <h3>Cake</h3>
+          <p>An online ordering storefront for a small-batch bakery, built for speed.</p>
+        </div>
+      </div>
+ 
+      <div class="pf-card pf-3" data-modal="m3">
+        <div class="pf-thumb">
+          <svg viewBox="0 0 100 100">
+            <polygon points="20,35 35,15 50,35" fill="#C0392B"/>
+            <polygon points="50,35 65,15 80,35" fill="#fff" stroke="#C0392B" stroke-width="1"/>
+            <rect x="20" y="35" width="60" height="38" fill="#fff"/>
+            <rect x="20" y="35" width="15" height="38" fill="#C0392B"/>
+            <rect x="50" y="35" width="15" height="38" fill="#C0392B"/>
+            <rect x="40" y="50" width="20" height="23" fill="#7a4a2a"/>
+            <rect x="10" y="73" width="80" height="6" fill="#ddd"/>
+            <polygon points="46,5 50,16 54,5" fill="#C0392B"/>
+          </svg>
+        </div>
+        <div class="pf-body">
+          <h3>Circus</h3>
+          <p>An event microsite for a traveling circus, with ticketing and showtimes.</p>
+        </div>
+      </div>
+ 
+      <div class="pf-card pf-4" data-modal="m4">
+        <div class="pf-thumb">
+          <svg viewBox="0 0 100 100">
+            <rect x="15" y="38" width="70" height="34" rx="16" fill="#34495E"/>
+            <circle cx="35" cy="55" r="9" fill="#222"/>
+            <circle cx="35" cy="55" r="4" fill="#666"/>
+            <circle cx="68" cy="48" r="5" fill="#1ABC9C"/>
+            <circle cx="80" cy="58" r="5" fill="#E74C3C"/>
+          </svg>
+        </div>
+        <div class="pf-body">
+          <h3>Game</h3>
+          <p>A launch page for an indie game studio, with trailer and devlog.</p>
+        </div>
+      </div>
+ 
+      <div class="pf-card pf-5" data-modal="m5">
+        <div class="pf-thumb">
+          <svg viewBox="0 0 100 100">
+            <rect x="15" y="42" width="70" height="22" rx="11" fill="#34495E"/>
+            <circle cx="28" cy="53" r="14" fill="#5D7A8C"/>
+            <rect x="60" y="30" width="6" height="14" fill="#34495E"/>
+            <polygon points="20,64 35,64 30,75 25,75" fill="#34495E"/>
+            <polygon points="65,64 80,64 75,75 70,75" fill="#34495E"/>
+          </svg>
+        </div>
+        <div class="pf-body">
+          <h3>Submarine</h3>
+          <p>A dashboard for tracking marine research expeditions in real time.</p>
+        </div>
+      </div>
+ 
+      <div class="pf-card pf-6" data-modal="m6">
+        <div class="pf-thumb">
+          <svg viewBox="0 0 100 100">
+            <rect x="20" y="15" width="60" height="70" rx="4" fill="#7a7a7a"/>
+            <rect x="26" y="21" width="48" height="58" rx="2" fill="#2C3E50"/>
+            <circle cx="50" cy="50" r="14" fill="#bbb"/>
+            <circle cx="50" cy="50" r="4" fill="#444"/>
+            <rect x="48" y="34" width="4" height="10" fill="#bbb"/>
+          </svg>
+        </div>
+        <div class="pf-body">
+          <h3>Safe</h3>
+          <p>A security-focused landing page for a digital vault and password manager.</p>
+        </div>
+      </div>
+ 
     </div>
-</section>
-
-<section id="projects">
-    <h2>Dự án nổi bật</h2>
-
-    <div class="projects">
-
-        <div class="card">
-            <img src="https://picsum.photos/600/400?1">
-            <div class="card-content">
-                <h3>Hansel and Gretel: The Witch's Game</h3>
-                <p>RPG phiêu lưu với phép thuật, quái vật và hệ thống đồng đội.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/600/400?2">
-            <div class="card-content">
-                <h3>Vietnam RPG</h3>
-                <p>Game RPG lấy cảm hứng từ văn hóa và bối cảnh Việt Nam.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/600/400?3">
-            <div class="card-content">
-                <h3>Survivor Horde</h3>
-                <p>Game sinh tồn chiến đấu với hàng nghìn quái vật.</p>
-            </div>
-        </div>
-
+  </div>
+</div>
+ 
+<div class="section" id="about" style="background:#f7f7f7;">
+  <div class="container">
+    <h2 class="section-title">TÔI LÀ AI</h2>
+    <div class="divider"><span class="line"></span><span class="star">★</span><span class="line"></span></div>
+    <div class="about-text">
+      <p>Freelancer is a free Bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+      <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+      <div class="about-center">
+        <a href="#" class="btn-download">Download Theme</a>
+      </div>
     </div>
-</section>
-
-<section>
-    <h2>Liên hệ</h2>
-
-    <p style="text-align:center;">
-        YouTube: Vui game vãi
-        <br><br>
-        GitHub: Your Github
-    </p>
-</section>
-
+  </div>
+</div>
+ 
+<div class="section contact-section" id="contact">
+  <div class="container">
+    <h2 class="section-title">LIÊN HỆ</h2>
+    <div class="divider"><span class="line"></span><span class="star">★</span><span class="line"></span></div>
+ 
+    <div class="contact-grid">
+      <form id="contactForm">
+        <div class="field">
+          <label>Tên của bạn</label>
+          <input type="text" required>
+        </div>
+        <div class="field">
+          <label>Địa chỉ email</label>
+          <input type="email" required>
+        </div>
+        <div class="field">
+          <label>Tin nhắn</label>
+          <textarea required></textarea>
+        </div>
+        <button type="submit" class="btn-send">Gửi</button>
+        <span class="sent-note" id="sentNote">✓ Message sent</span>
+      </form>
+ 
+      <div class="contact-info">
+        <h4>ĐỊA CHỈ</h4>
+        <p>Tòa nhà N03-T7 khu Ngoại Giao Đoàn<br>quận Bắc Từ Liêm, Hà Nội</p>
+        <h4>KẾT NỐI VỚI TÔI</h4>
+        <ul>
+          <li><b>Youtube: </b><a href="https://www.youtube.com/channel/UC0qo0IiKZxRoKpqrbIFp4ZA"><b>Hôm nay chơi game gì </a></li>
+          <li><b>Facebook: </b><a href="https://www.facebook.com/manhhung.hoang.98/">Hoàng Mạnh Hưng</a></li>
+          <li><b>Email: </b>chaobalder01@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+ 
 <footer>
-    © 2026 Hưng Nova
 </footer>
+ 
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalContent">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div id="modalInner"></div>
+  </div>
+</div>
+ 
+<script>
+  const projects = {
+    m1: {title:"Cabin", icon:"#C0506B", iconBg:"#2C7A6F", date:"April 2026"},
+    m2: {title:"Cake", icon:"#1F8FB5", iconBg:"#E8654A", date:"April 2026"},
+    m3: {title:"Circus", icon:"#1B1B1B", iconBg:"#E8E8E8", date:"April 2026"},
+    m4: {title:"Game", icon:"#1F6FB5", iconBg:"#F2A33D", date:"April 2026"},
+    m5: {title:"Submarine", icon:"#D8C7B0", iconBg:"#3a3a3a", date:"April 2026"},
+    m6: {title:"Safe", icon:"#1530A6", iconBg:"#D8C7B0", date:"April 2026"}
+  };
+ 
+  const overlay = document.getElementById('modalOverlay');
+  const inner = document.getElementById('modalInner');
+ 
+  document.querySelectorAll('.pf-card').forEach(item=>{
+    item.addEventListener('click', ()=>{
+      const p = projects[item.dataset.modal];
+      inner.innerHTML = `
+        <div class="modal-thumb" style="background:${p.icon}"></div>
+        <h3>${p.title}</h3>
+        <div class="divider modal-divider"><span class="line" style="background:#2C3E50;width:30px"></span><span class="star">★</span><span class="line" style="background:#2C3E50;width:30px"></span></div>
+        <p>Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae.</p>
+        <ul>
+          <li>Client: <b>Start Bootstrap</b></li>
+          <li>Date: <b>${p.date}</b></li>
+          <li>Service: <b>Web Development</b></li>
+        </ul>
+      `;
+      overlay.classList.add('open');
+    });
+  });
+ 
+  document.getElementById('modalClose').addEventListener('click', ()=> overlay.classList.remove('open'));
+  overlay.addEventListener('click', (e)=>{ if(e.target === overlay) overlay.classList.remove('open'); });
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') overlay.classList.remove('open'); });
+ 
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('sentNote').classList.add('show');
+  });
+</script>
 
 </body>
 </html>
