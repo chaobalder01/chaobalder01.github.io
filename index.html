@@ -240,11 +240,11 @@
 
   const documents = {
     m1: {title:"Unity", icon:"assets/images/unity logo.png", dowload:"assets/docs/Unity.xlsx", date:"01/04/2026"},
-    m2: {title:"C#", icon:"#1F8FB5", iconBg:"#E8654A", date:"01/04/2026"},
-    m3: {title:"Java", icon:"#1B1B1B", iconBg:"#E8E8E8", date:"01/04/2026"},
-    m4: {title:"Springboot", icon:"#1F6FB5", iconBg:"#F2A33D", date:"01/04/2026"},
-    m5: {title:"Python", icon:"#D8C7B0", iconBg:"#3a3a3a", date:"01/04/2026"},
-    m6: {title:"3Ds max", icon:"#1530A6", iconBg:"#D8C7B0", date:"01/04/2026"}
+    m2: {title:"C#", icon:"assets/images/C logo.png", dowload:"assets/docs/C sharp.xlsx", date:"01/04/2026"},
+    m3: {title:"Java", icon:"assets/images/java logo.png", dowload:"assets/docs/Java.xlsx", date:"01/04/2026"},
+    m4: {title:"Springboot", icon:"assets/images/spring logo.png", dowload:"assets/docs/Java Spring.xlsx", date:"01/04/2026"},
+    m5: {title:"Python", icon:"assets/images/python logo.png", dowload:"assets/docs/Python.xlsx", date:"01/04/2026"},
+    m6: {title:"3Ds max", icon:"assets/images/3ds max logo.png", dowload:"assets/docs/3Ds max.xlsx", date:"01/04/2026"}
   };
  
   const overlay = document.getElementById('modalOverlay');
@@ -259,7 +259,7 @@
         </div>
         <h3>${p.title}</h3>
         <div class="divider modal-divider"><span class="line" style="background:#2C3E50;width:30px"></span><span class="star">★</span><span class="line" style="background:#2C3E50;width:30px"></span></div>
-        ${p.title} <a href="${p.dowload}" class="download-btn1" sytle="text-align:right;">Download</a>
+        <a href="${p.dowload}" class="download-btn1" sytle="text-align:right;">Download</a>
         <br><br>
         <ul>
           <li>Trạng thái: <b>Doing</b></li>
