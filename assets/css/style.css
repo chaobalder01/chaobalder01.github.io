@@ -38,6 +38,12 @@
     margin:auto;
   }
 
+  .pic1{
+    width:230px;height:230px;border-radius:50%;
+    overflow:hidden;
+    margin:auto;
+  }
+
 .status{
     background:#1abc9c;
     color:white;
